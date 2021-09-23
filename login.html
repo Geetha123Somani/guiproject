@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+</head>
+<style>
+body{
+background-image:url('login.jpg');
+background-repeat: no-repeat;
+background-position: cover;
+ margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.form {
+    margin: 50px auto;
+    width: 300px;
+    padding: 30px 30px;
+    background:black;
+    float:right;
+}
+h1.login-title {
+    color: white;
+    margin: 0px auto 25px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+}
+.login-input {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 25px;
+    height: 25px;
+    width: calc(100% - 23px);
+}
+.login-button {
+    color: #fff;
+    background: #55a1ff;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.link {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.link a {
+    color: white;
+}
+h3 {
+    font-weight: normal;
+    text-align: center;
+}
+
+</style>
+<body>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="aboutus.html">About</a>
+  <a href="contactus.html">Contact Us</a>
+</div>
+<form class="form" method="post" action="welcom.html">
+        <h1 class="login-title">Login</h1>
+        <input type="text" class="login-input" name="username" placeholder="Username" required/>
+        <input type="password" class="login-input" name="password" placeholder="Password" required/>
+        <input type="submit" value="Login" name="submit" class="login-button"/>
+        <p class="link">Don't have an account? <a href="register.html">Registration Now</a></p>
+  </form>
+
+
+</body>
+</html>
