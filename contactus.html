@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>One Page Website</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<style>
+*{
+
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #ED6663;
+    font-family: sans-serif;
+}
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+/*css reset*/
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+div{
+    text-align: center
+}
+.contact-box{
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 60%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    position: absolute;
+    float: center;
+}
+form{
+    margin:35px;
+
+}
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.textarea-field{
+    height: 150px;
+    padding-top: 10px;
+}
+.btn{
+
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #59405C;
+}
+</style>
+
+<body>
+
+     <section id="home">
+        <header>
+           
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="food.html">Food</a></li>
+            </ul>
+        </header> 
+        <div>
+         <div class="contact-box">
+       <form action="contactus.html" method="post">
+             <input type="text" class="input-field" placeholder="Your Name">
+             <input type="text" class="input-field" placeholder="Your Email">
+             <input type="text" class="input-field" placeholder="Subject">
+               <textarea type="text" class="input-field textarea-field" placeholder="Your message"></textarea>
+               <button type="button" class="btn">Send Message</button>
+       </form>
+</div>
+</div>
+     </section> 
+  
+
+</body>
